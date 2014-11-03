@@ -23,5 +23,5 @@ struct 對應 Table field :
         Name string
     }
 
-> Name 會對應到 tt table 的 name 欄位
-> struct 裡的 Name 或 NAME 都可以, 不分大小寫
+> * Name 會對應到 tt table 的 name 欄位
+> * struct 裡的 Name 或 NAME 都可以, 不分大小寫
