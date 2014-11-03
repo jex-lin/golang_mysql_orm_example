@@ -24,4 +24,4 @@ struct 對應 Table field :
     }
 
 > Name 會對應到 tt table 的 name 欄位
-> Name 或 NAME 都可以, 不分大小寫
+> struct 裡的 Name 或 NAME 都可以, 不分大小寫
