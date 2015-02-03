@@ -26,3 +26,7 @@ struct 對應 Table field :
 > * Name 會對應到 tt table 的 name 欄位
 > * struct 裡的 Name 或 NAME 都可以, 不分大小寫
 > * struct 裡的欄位首位字母一定要大寫, 而 table 的欄位名稱都可以小寫沒有關係
+
+### Select
+
+    _, err := dbmap.Select(&existent_video, "select * from videos where source_website = :source_website and file_name = :file_name", map[string]interface{}{"source_website": video.Source_website, "file_name": video.File_name})
