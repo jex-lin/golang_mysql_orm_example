@@ -30,3 +30,8 @@ struct 對應 Table field :
 ### Select
 
     _, err := dbmap.Select(&existent_video, "select * from videos where source_website = :source_website and file_name = :file_name", map[string]interface{}{"source_website": video.Source_website, "file_name": video.File_name})
+
+### SelectOne
+
+    var existent_video Video
+    err = dbmap.SelectOne(&existent_video, "select * from videos where source_website = :source_website and file_name = :file_name", map[string]interface{}{"source_website": video.Source_website, "file_name": video.File_name})
